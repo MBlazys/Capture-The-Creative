@@ -446,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E4AE09133AA9B36A0BFDAD2 /* Pods-Capture The Creative.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KJ6PHPR45N;
 				INFOPLIST_FILE = "Capture The Creative/Info.plist";
@@ -460,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96659583B6FDF917880E37AB /* Pods-Capture The Creative.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KJ6PHPR45N;
 				INFOPLIST_FILE = "Capture The Creative/Info.plist";
