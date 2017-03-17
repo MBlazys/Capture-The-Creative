@@ -63,6 +63,15 @@ class ProfileVC: UIViewController {
         }
     }
     
+    @IBAction func handleOpenCameraVC(_ sender: Any) {
+        
+        let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "Camera") as! CameraVC
+        self.present(viewConrolller, animated: true, completion: nil)
+
+        
+    }
+    
+    
     @IBAction func handleLogoutButton(_ sender: UIButton) {
         
         do {

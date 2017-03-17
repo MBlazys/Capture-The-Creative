@@ -12,6 +12,14 @@
 		CA2360A91E72FB940083B28D /* Capture_The_Creative.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA2360A71E72FB940083B28D /* Capture_The_Creative.xcdatamodeld */; };
 		CA2360AB1E72FB940083B28D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2360AA1E72FB940083B28D /* Assets.xcassets */; };
 		CA2360AE1E72FB940083B28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2360AC1E72FB940083B28D /* LaunchScreen.storyboard */; };
+		CA65226B1E780AA5009C0D55 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65226A1E780AA5009C0D55 /* CameraVC.swift */; };
+		CA65226F1E796D9A009C0D55 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65226E1E796D9A009C0D55 /* PhotoVC.swift */; };
+		CA7AEF291E7B2BC7007618A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7AEF281E7B2BC7007618A4 /* Post.swift */; };
+		CA7AEF2B1E7BFF77007618A4 /* uploadPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7AEF2A1E7BFF77007618A4 /* uploadPost.swift */; };
+		CAC475551E7AA04A00AD06D3 /* cameraHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475541E7AA04A00AD06D3 /* cameraHandlers.swift */; };
+		CAC475571E7AA16100AD06D3 /* photoLibraryImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */; };
+		CAC475591E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */; };
+		CAC4755B1E7AC2AA00AD06D3 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4755A1E7AC2AA00AD06D3 /* PostVC.swift */; };
 		CAE133561E72FD220042B4B7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE133551E72FD220042B4B7 /* LoginVC.swift */; };
 		CAE133591E73FB6B0042B4B7 /* LoginVCKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE133581E73FB6B0042B4B7 /* LoginVCKeyboard.swift */; };
 		CAE1335B1E73FB910042B4B7 /* LoginVCOutletSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1335A1E73FB910042B4B7 /* LoginVCOutletSettings.swift */; };
@@ -40,6 +48,14 @@
 		CA2360AA1E72FB940083B28D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2360AD1E72FB940083B28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA2360AF1E72FB940083B28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA65226A1E780AA5009C0D55 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		CA65226E1E796D9A009C0D55 /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		CA7AEF281E7B2BC7007618A4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CA7AEF2A1E7BFF77007618A4 /* uploadPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uploadPost.swift; sourceTree = "<group>"; };
+		CAC475541E7AA04A00AD06D3 /* cameraHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraHandlers.swift; sourceTree = "<group>"; };
+		CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoLibraryImageHandler.swift; sourceTree = "<group>"; };
+		CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handlePickImageFromLibrary.swift; sourceTree = "<group>"; };
+		CAC4755A1E7AC2AA00AD06D3 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		CAE133551E72FD220042B4B7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CAE133581E73FB6B0042B4B7 /* LoginVCKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVCKeyboard.swift; sourceTree = "<group>"; };
 		CAE1335A1E73FB910042B4B7 /* LoginVCOutletSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVCOutletSettings.swift; sourceTree = "<group>"; };
@@ -103,6 +119,7 @@
 				CAE133541E72FCDC0042B4B7 /* Register */,
 				CAE133531E72FCCE0042B4B7 /* Login */,
 				CAE133571E73FB430042B4B7 /* Profile */,
+				CA6522691E780A85009C0D55 /* Camera */,
 				CA2360AA1E72FB940083B28D /* Assets.xcassets */,
 				CA2360AC1E72FB940083B28D /* LaunchScreen.storyboard */,
 				CA2360AF1E72FB940083B28D /* Info.plist */,
@@ -110,6 +127,52 @@
 				CAE133721E73FE940042B4B7 /* GoogleService-Info.plist */,
 			);
 			path = "Capture The Creative";
+			sourceTree = "<group>";
+		};
+		CA6522691E780A85009C0D55 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CA7AEF251E7B2AAF007618A4 /* Camera */,
+				CA7AEF261E7B2ABF007618A4 /* Preview */,
+				CA7AEF271E7B2ACF007618A4 /* Post */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		CA6522721E79903B009C0D55 /* cameraHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				CAC475541E7AA04A00AD06D3 /* cameraHandlers.swift */,
+				CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */,
+				CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */,
+			);
+			name = cameraHandlers;
+			sourceTree = "<group>";
+		};
+		CA7AEF251E7B2AAF007618A4 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CA65226A1E780AA5009C0D55 /* CameraVC.swift */,
+				CA6522721E79903B009C0D55 /* cameraHandlers */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		CA7AEF261E7B2ABF007618A4 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				CA65226E1E796D9A009C0D55 /* PhotoVC.swift */,
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
+		CA7AEF271E7B2ACF007618A4 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4755A1E7AC2AA00AD06D3 /* PostVC.swift */,
+				CA7AEF2A1E7BFF77007618A4 /* uploadPost.swift */,
+			);
+			name = Post;
 			sourceTree = "<group>";
 		};
 		CAE133531E72FCCE0042B4B7 /* Login */ = {
@@ -147,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CAE1336B1E73FCC00042B4B7 /* User.swift */,
+				CA7AEF281E7B2BC7007618A4 /* Post.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -312,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE133611E73FC010042B4B7 /* RegisterVCKeyboard.swift in Sources */,
+				CA7AEF291E7B2BC7007618A4 /* Post.swift in Sources */,
 				CAE1335B1E73FB910042B4B7 /* LoginVCOutletSettings.swift in Sources */,
 				CAE1335F1E73FBEE0042B4B7 /* RegisterVC.swift in Sources */,
 				CA2360A91E72FB940083B28D /* Capture_The_Creative.xcdatamodeld in Sources */,
@@ -322,10 +387,17 @@
 				CAE133691E73FC920042B4B7 /* ProfileVC.swift in Sources */,
 				CAE1336F1E73FCE80042B4B7 /* EditProfileVC.swift in Sources */,
 				CAE133591E73FB6B0042B4B7 /* LoginVCKeyboard.swift in Sources */,
+				CA65226B1E780AA5009C0D55 /* CameraVC.swift in Sources */,
 				CAE1335D1E73FBA50042B4B7 /* handleEmailLogin.swift in Sources */,
 				CAE133631E73FC240042B4B7 /* RegisterVCOutletSettings.swift in Sources */,
+				CA65226F1E796D9A009C0D55 /* PhotoVC.swift in Sources */,
 				CAE133711E73FD4A0042B4B7 /* handleUpdateUserProfilePhoto.swift in Sources */,
+				CAC475591E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift in Sources */,
+				CAC475571E7AA16100AD06D3 /* photoLibraryImageHandler.swift in Sources */,
+				CAC4755B1E7AC2AA00AD06D3 /* PostVC.swift in Sources */,
+				CA7AEF2B1E7BFF77007618A4 /* uploadPost.swift in Sources */,
 				CAE133651E73FC600042B4B7 /* handleSelectUserProfileImage.swift in Sources */,
+				CAC475551E7AA04A00AD06D3 /* cameraHandlers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
