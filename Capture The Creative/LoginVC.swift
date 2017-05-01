@@ -44,9 +44,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     func goToMainScreen() {
         
         // Present MyProfileVC
-        let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfileVC
-        let navController = UINavigationController(rootViewController: viewConrolller)
-        self.present(navController, animated: true, completion: nil)
+        let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
+        self.present(viewConrolller, animated: true, completion: nil)
         
     }
     

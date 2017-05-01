@@ -46,6 +46,7 @@ extension CameraVC {
             cameraPreviewLayer?.frame = view.layer.frame
             
             // Bring the camera and library button to front
+            view.bringSubview(toFront: cancelButton)
             view.bringSubview(toFront: cameraButton)
             view.bringSubview(toFront: photoLibraryImage)
             captureSession.startRunning()

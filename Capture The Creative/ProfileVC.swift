@@ -71,8 +71,7 @@ class ProfileVC: UIViewController {
         
     }
     
-    
-    @IBAction func handleLogoutButton(_ sender: UIButton) {
+    @IBAction func handleLogoutButton(_ sender: Any) {
         
         do {
             try FIRAuth.auth()?.signOut()
@@ -91,9 +90,5 @@ class ProfileVC: UIViewController {
             UIApplication.shared.keyWindow?.rootViewController = viewController
             self.dismiss(animated: true, completion: nil)
         }
-        
     }
-    
-    
-    
 }

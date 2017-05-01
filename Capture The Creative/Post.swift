@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Foundation
+import IGListKit
 
-class Post: NSObject {
+class Post {
 
     var title: String!
     var desc: String!
@@ -16,16 +18,16 @@ class Post: NSObject {
     var uid: String!
     var username: String!
     var likes: Int!
-    var postKey: String!
+    var postID: String!
     
-    init(title: String, desc: String, photoURL: String, uid: String, username: String, likes: Int, postKey: String) {
+    init(title: String, desc: String, photoURL: String, uid: String, username: String, likes: Int, postID: String) {
         self.title = title
         self.desc = desc
         self.photoURL = photoURL
         self.uid = uid
         self.username = username
         self.likes = likes
-        self.postKey = postKey
+        self.postID = postID
     }
     
     func getPostDictionary() -> Dictionary<String, AnyObject> {
@@ -35,9 +37,37 @@ class Post: NSObject {
                               "uid": self.uid,
                               "username": self.username,
                               "likes": self.likes,
-                              "postKey": self.postKey] as [String : Any]
+                              "postID": self.postID] as [String : Any]
         
         return postDictionary as Dictionary<String, AnyObject>
     }
-    
 }
+
+extension Post: Equatable {
+    static public func == (rhs: Post, lhs: Post) -> Bool {
+        return rhs.postID == lhs.postID
+    }
+}
+
+extension Post: IGListDiffable {
+    /**
+     Returns whether the receiver and a given object are equal.
+     
+     @param object The object to be compared to the receiver.
+     
+     @return `YES` if the receiver and object are equal, otherwise `NO`.
+     */
+    func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+        guard let object = object as? Post else {
+            return false
+        }
+        
+        return self.postID == object.postID
+    }
+
+    public func diffIdentifier() -> NSObjectProtocol {
+        return postID as NSObjectProtocol
+    }
+}
+
+

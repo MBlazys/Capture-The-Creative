@@ -38,8 +38,13 @@ class PostVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     @IBAction func handlePostButton(_ sender: Any) {
         
         uploadPost()
-        
     }
+    
+    @IBAction func handleCancelButton(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
     // Hide status bar e.g. Time, Battery Life
     override var prefersStatusBarHidden: Bool {

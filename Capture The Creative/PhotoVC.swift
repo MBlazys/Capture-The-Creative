@@ -33,7 +33,6 @@ class PhotoVC: UIViewController {
         
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "showPost" {
@@ -43,6 +42,7 @@ class PhotoVC: UIViewController {
         }
         
     }
+    
     
     // Hide status bar e.g. Time, Battery Life
     override var prefersStatusBarHidden: Bool {

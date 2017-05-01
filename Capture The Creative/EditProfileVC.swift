@@ -38,21 +38,9 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    @IBAction func handleCancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     // Change profile picture

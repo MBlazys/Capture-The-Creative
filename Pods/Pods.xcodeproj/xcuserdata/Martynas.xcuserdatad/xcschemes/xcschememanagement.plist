@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IGListKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyCam.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -57,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F7A7EBA65701D27A7D4C84EC791D300</key>
+		<key>2504C1D6BCDDB3868A43357715D8A37D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9DFF60BF3893CE74A0B5428275743F7A</key>
+		<key>764D2762B32F5331CADC1249E4C337E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D371F084A872F519D76BDE920BD9FCE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D781EB30AA915DF5F4DD7F2BB2A2CA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

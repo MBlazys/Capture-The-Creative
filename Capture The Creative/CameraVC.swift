@@ -12,6 +12,7 @@ import Photos
 
 class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet var cancelButton: UIButton!
     @IBOutlet var cameraButton: UIButton!
     @IBOutlet var photoLibraryImage: UIImageView!
     
@@ -32,6 +33,8 @@ class CameraVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.tabBar.isHidden = true
         
         // Get the last image from the library to show up
         retrieveLastImageFromPhotoLibrary()

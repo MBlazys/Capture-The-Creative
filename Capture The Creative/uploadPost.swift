@@ -54,7 +54,7 @@ extension PostVC {
                         self.present(alert, animated: true, completion: nil)
                     }
                     
-                    let postInfo = Post(title: title, desc: desc, photoURL: url!.absoluteString, uid: userID, username: FIRAuth.auth()!.currentUser!.displayName!, likes: 0, postKey: key)
+                    let postInfo = Post(title: title, desc: desc, photoURL: url!.absoluteString, uid: userID, username: FIRAuth.auth()!.currentUser!.displayName!, likes: 0, postID: key)
                     
                     databaseRef.child("posts").child(userID).child(key).updateChildValues(postInfo.getPostDictionary(), withCompletionBlock: { (err, databaseRef) in
                         

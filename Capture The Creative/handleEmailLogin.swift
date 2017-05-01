@@ -46,12 +46,9 @@ extension LoginVC {
             // Dismiss keyboard
             self.view.endEditing(true)
             
-            // Present MyProfileVC
-            let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfileVC
-            let navController = UINavigationController(rootViewController: viewConrolller)
-            self.present(navController, animated: true, completion: nil)
-            
-            
+            // Present Tabbar
+            let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
+            self.present(viewConrolller, animated: true, completion: nil)
             
         })
     }

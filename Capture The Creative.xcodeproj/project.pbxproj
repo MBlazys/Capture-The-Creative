@@ -10,8 +10,11 @@
 		CA2360A11E72FB940083B28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2360A01E72FB940083B28D /* AppDelegate.swift */; };
 		CA2360A61E72FB940083B28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2360A41E72FB940083B28D /* Main.storyboard */; };
 		CA2360A91E72FB940083B28D /* Capture_The_Creative.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA2360A71E72FB940083B28D /* Capture_The_Creative.xcdatamodeld */; };
-		CA2360AB1E72FB940083B28D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2360AA1E72FB940083B28D /* Assets.xcassets */; };
 		CA2360AE1E72FB940083B28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2360AC1E72FB940083B28D /* LaunchScreen.storyboard */; };
+		CA2450161EB62547001DABB2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2450151EB62547001DABB2 /* UserCell.swift */; };
+		CA2450191EB6263F001DABB2 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2450181EB6263F001DABB2 /* UsersVC.swift */; };
+		CA24501B1EB62AF0001DABB2 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24501A1EB62AF0001DABB2 /* Follower.swift */; };
+		CA24502C1EB7BBAB001DABB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA24502B1EB7BBAB001DABB2 /* Assets.xcassets */; };
 		CA65226B1E780AA5009C0D55 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65226A1E780AA5009C0D55 /* CameraVC.swift */; };
 		CA65226F1E796D9A009C0D55 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65226E1E796D9A009C0D55 /* PhotoVC.swift */; };
 		CA7AEF291E7B2BC7007618A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7AEF281E7B2BC7007618A4 /* Post.swift */; };
@@ -20,6 +23,7 @@
 		CAC475571E7AA16100AD06D3 /* photoLibraryImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */; };
 		CAC475591E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */; };
 		CAC4755B1E7AC2AA00AD06D3 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4755A1E7AC2AA00AD06D3 /* PostVC.swift */; };
+		CAC615911EB3364700CF63F0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC615901EB3364700CF63F0 /* FeedViewController.swift */; };
 		CAE133561E72FD220042B4B7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE133551E72FD220042B4B7 /* LoginVC.swift */; };
 		CAE133591E73FB6B0042B4B7 /* LoginVCKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE133581E73FB6B0042B4B7 /* LoginVCKeyboard.swift */; };
 		CAE1335B1E73FB910042B4B7 /* LoginVCOutletSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1335A1E73FB910042B4B7 /* LoginVCOutletSettings.swift */; };
@@ -45,9 +49,12 @@
 		CA2360A01E72FB940083B28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2360A51E72FB940083B28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA2360A81E72FB940083B28D /* Capture_The_Creative.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Capture_The_Creative.xcdatamodel; sourceTree = "<group>"; };
-		CA2360AA1E72FB940083B28D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2360AD1E72FB940083B28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA2360AF1E72FB940083B28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2450151EB62547001DABB2 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CA2450181EB6263F001DABB2 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		CA24501A1EB62AF0001DABB2 /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		CA24502B1EB7BBAB001DABB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA65226A1E780AA5009C0D55 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		CA65226E1E796D9A009C0D55 /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		CA7AEF281E7B2BC7007618A4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoLibraryImageHandler.swift; sourceTree = "<group>"; };
 		CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handlePickImageFromLibrary.swift; sourceTree = "<group>"; };
 		CAC4755A1E7AC2AA00AD06D3 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		CAC615901EB3364700CF63F0 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CAE133551E72FD220042B4B7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CAE133581E73FB6B0042B4B7 /* LoginVCKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVCKeyboard.swift; sourceTree = "<group>"; };
 		CAE1335A1E73FB910042B4B7 /* LoginVCOutletSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVCOutletSettings.swift; sourceTree = "<group>"; };
@@ -115,18 +123,29 @@
 			children = (
 				CA2360A01E72FB940083B28D /* AppDelegate.swift */,
 				CA2360A41E72FB940083B28D /* Main.storyboard */,
+				CA24502B1EB7BBAB001DABB2 /* Assets.xcassets */,
 				CAE1336A1E73FCA80042B4B7 /* Models */,
+				CA2450171EB62551001DABB2 /* Users */,
+				CAC615921EB3364D00CF63F0 /* Feed */,
 				CAE133541E72FCDC0042B4B7 /* Register */,
 				CAE133531E72FCCE0042B4B7 /* Login */,
 				CAE133571E73FB430042B4B7 /* Profile */,
 				CA6522691E780A85009C0D55 /* Camera */,
-				CA2360AA1E72FB940083B28D /* Assets.xcassets */,
 				CA2360AC1E72FB940083B28D /* LaunchScreen.storyboard */,
 				CA2360AF1E72FB940083B28D /* Info.plist */,
 				CA2360A71E72FB940083B28D /* Capture_The_Creative.xcdatamodeld */,
 				CAE133721E73FE940042B4B7 /* GoogleService-Info.plist */,
 			);
 			path = "Capture The Creative";
+			sourceTree = "<group>";
+		};
+		CA2450171EB62551001DABB2 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CA2450181EB6263F001DABB2 /* UsersVC.swift */,
+				CA2450151EB62547001DABB2 /* UserCell.swift */,
+			);
+			name = Users;
 			sourceTree = "<group>";
 		};
 		CA6522691E780A85009C0D55 /* Camera */ = {
@@ -175,6 +194,14 @@
 			name = Post;
 			sourceTree = "<group>";
 		};
+		CAC615921EB3364D00CF63F0 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				CAC615901EB3364700CF63F0 /* FeedViewController.swift */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
 		CAE133531E72FCCE0042B4B7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +238,7 @@
 			children = (
 				CAE1336B1E73FCC00042B4B7 /* User.swift */,
 				CA7AEF281E7B2BC7007618A4 /* Post.swift */,
+				CA24501A1EB62AF0001DABB2 /* Follower.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -280,7 +308,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Martynas Blazys";
 				TargetAttributes = {
 					CA23609C1E72FB940083B28D = {
@@ -315,8 +343,8 @@
 			files = (
 				CA2360AE1E72FB940083B28D /* LaunchScreen.storyboard in Resources */,
 				CAE133731E73FE940042B4B7 /* GoogleService-Info.plist in Resources */,
-				CA2360AB1E72FB940083B28D /* Assets.xcassets in Resources */,
 				CA2360A61E72FB940083B28D /* Main.storyboard in Resources */,
+				CA24502C1EB7BBAB001DABB2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +393,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,6 +417,8 @@
 				CAE133591E73FB6B0042B4B7 /* LoginVCKeyboard.swift in Sources */,
 				CA65226B1E780AA5009C0D55 /* CameraVC.swift in Sources */,
 				CAE1335D1E73FBA50042B4B7 /* handleEmailLogin.swift in Sources */,
+				CA2450161EB62547001DABB2 /* UserCell.swift in Sources */,
+				CA24501B1EB62AF0001DABB2 /* Follower.swift in Sources */,
 				CAE133631E73FC240042B4B7 /* RegisterVCOutletSettings.swift in Sources */,
 				CA65226F1E796D9A009C0D55 /* PhotoVC.swift in Sources */,
 				CAE133711E73FD4A0042B4B7 /* handleUpdateUserProfilePhoto.swift in Sources */,
@@ -398,6 +428,8 @@
 				CA7AEF2B1E7BFF77007618A4 /* uploadPost.swift in Sources */,
 				CAE133651E73FC600042B4B7 /* handleSelectUserProfileImage.swift in Sources */,
 				CAC475551E7AA04A00AD06D3 /* cameraHandlers.swift in Sources */,
+				CAC615911EB3364700CF63F0 /* FeedViewController.swift in Sources */,
+				CA2450191EB6263F001DABB2 /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -506,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
