@@ -96,6 +96,21 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
                             guard let updatedWebsite = self.websiteTextField.text else {return}
                             guard let updatedBio = self.bioTextField.text else {return}
                             
+                            if let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest() {
+                                changeRequest.displayName = updatedUsername
+                                changeRequest.commitChanges(completion: { (error) in
+                                    if let error = error {
+                                        
+                                        let alert = UIAlertController(title: "Registration Error", message: error.localizedDescription, preferredStyle: .alert)
+                                        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                        alert.addAction(okAction)
+                                        self.present(alert, animated: true, completion: nil)
+                                        
+                                        return
+                                    }
+                                })
+                            }
+                            
                             let updatedValues = ["photoURL": photoURL,
                                                  "username": updatedUsername,
                                                  "fullname": updatedFullname,

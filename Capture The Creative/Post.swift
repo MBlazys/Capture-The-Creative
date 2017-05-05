@@ -17,10 +17,14 @@ class Post {
     var photoURL: String!
     var uid: String!
     var username: String!
-    var likes: Int!
+    var likes: String!
     var postID: String!
+    var timestamp: NSNumber!
+    var fullname: String!
+    var profileURL: String!
     
-    init(title: String, desc: String, photoURL: String, uid: String, username: String, likes: Int, postID: String) {
+    init(title: String, desc: String, photoURL: String, uid: String, username: String, likes: String!, postID: String, timestamp: NSNumber, fullname: String!, profileURL: String!) {
+        
         self.title = title
         self.desc = desc
         self.photoURL = photoURL
@@ -28,6 +32,10 @@ class Post {
         self.username = username
         self.likes = likes
         self.postID = postID
+        self.timestamp = timestamp
+        self.fullname = fullname
+        self.profileURL = profileURL
+        
     }
     
     func getPostDictionary() -> Dictionary<String, AnyObject> {
@@ -37,7 +45,10 @@ class Post {
                               "uid": self.uid,
                               "username": self.username,
                               "likes": self.likes,
-                              "postID": self.postID] as [String : Any]
+                              "postID": self.postID,
+                              "timestamp": self.timestamp,
+                              "fullname": self.fullname,
+                              "profileURL": self.profileURL] as [String : Any]
         
         return postDictionary as Dictionary<String, AnyObject>
     }
@@ -50,23 +61,17 @@ extension Post: Equatable {
 }
 
 extension Post: IGListDiffable {
-    /**
-     Returns whether the receiver and a given object are equal.
-     
-     @param object The object to be compared to the receiver.
-     
-     @return `YES` if the receiver and object are equal, otherwise `NO`.
-     */
-    func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
-        guard let object = object as? Post else {
-            return false
-        }
-        
-        return self.postID == object.postID
-    }
-
+    
     public func diffIdentifier() -> NSObjectProtocol {
         return postID as NSObjectProtocol
+    }
+
+    public func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+        guard let object = object as? Post else {
+        return false
+        }
+        
+    return self.postID == object.postID
     }
 }
 

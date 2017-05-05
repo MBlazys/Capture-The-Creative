@@ -54,16 +54,24 @@ extension PostVC {
                         self.present(alert, animated: true, completion: nil)
                     }
                     
-                    let postInfo = Post(title: title, desc: desc, photoURL: url!.absoluteString, uid: userID, username: FIRAuth.auth()!.currentUser!.displayName!, likes: 0, postID: key)
-                    
-                    databaseRef.child("posts").child(userID).child(key).updateChildValues(postInfo.getPostDictionary(), withCompletionBlock: { (err, databaseRef) in
+                    databaseRef.child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                         
-                        if err != nil {
-                            let alert = UIAlertController(title: "Error", message: (err?.localizedDescription)! as String, preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-                            self.present(alert, animated: true, completion: nil)
+                        let dictionary = snapshot.value as? NSDictionary
+                        
+                        let fullname = dictionary?["fullname"] as? String
+                        let profileURL = dictionary?["photoURL"] as? String
+                        
+                        let postInfo = Post(title: title, desc: desc, photoURL: url!.absoluteString, uid: userID, username: FIRAuth.auth()!.currentUser!.displayName!, likes: "0", postID: key, timestamp: NSNumber(value: Int(NSDate().timeIntervalSince1970)), fullname: fullname, profileURL: profileURL)
+                        
+                        databaseRef.child("posts").child(userID).child(key).updateChildValues(postInfo.getPostDictionary(), withCompletionBlock: { (err, databaseRef) in
                             
-                        }
+                            if err != nil {
+                                let alert = UIAlertController(title: "Error", message: (err?.localizedDescription)! as String, preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
+                                
+                            }
+                        })
                     })
                 })
                 
@@ -74,10 +82,9 @@ extension PostVC {
             // Dismiss keyboard
             self.view.endEditing(true)
             
-            // Present MyProfileVC
-            let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfileVC
-            let navController = UINavigationController(rootViewController: viewConrolller)
-            self.present(navController, animated: true, completion: nil)
+            // Present Tabbar
+            let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
+            self.present(viewConrolller, animated: true, completion: nil)
             
         }
     }

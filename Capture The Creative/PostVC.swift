@@ -9,12 +9,15 @@
 import UIKit
 import IQKeyboardManagerSwift
 import Firebase
+import Social
 
 class PostVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var descriptionTextView: UITextView!
+    @IBOutlet var facebookSwitch: UISwitch!
+    @IBOutlet var twitterSwitch: UISwitch!
     
     var image: UIImage?
     
@@ -65,4 +68,19 @@ class PostVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         }
     }
     
+    @IBAction func handleFacebookSharing(_ sender: UISwitch) {
+        
+        if (sender.isOn == true) {
+            
+            facebookShare() 
+        }
+    }
+    
+    @IBAction func handleTwitterSharing(_ sender: UISwitch) {
+        
+        if (sender.isOn == true) {
+            
+            twitterShare()
+        }
+    }
 }

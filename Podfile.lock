@@ -55,6 +55,11 @@ PODS:
   - GTMSessionFetcher/Core (1.1.9)
   - IGListKit (2.0.0)
   - IQKeyboardManagerSwift (4.0.9)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
   - SDWebImage/Core (4.0.0)
   - SwiftyCam (2.3.0)
 
@@ -68,6 +73,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - IGListKit (~> 2.0.0)
   - IQKeyboardManagerSwift
+  - Reusable
   - SDWebImage/Core
   - SwiftyCam
 
@@ -87,9 +93,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
   IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SwiftyCam: be1f832a32b12810e86e23a87caccadd855226ea
 
-PODFILE CHECKSUM: 1889c1a98a2d9256a771ac4057aa67a8deccbdb8
+PODFILE CHECKSUM: 3626a202864cbd9ef75abed151360070707d83a1
 
 COCOAPODS: 1.2.1

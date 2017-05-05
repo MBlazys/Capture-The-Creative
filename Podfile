@@ -16,6 +16,7 @@ target 'Capture The Creative' do
   pod 'IQKeyboardManagerSwift'
   pod 'SDWebImage/Core’
   pod 'IGListKit', '~> 2.0.0'
-  pod "SwiftyCam"
+  pod ‘SwiftyCam’
+  pod ‘Reusable’
 
 end

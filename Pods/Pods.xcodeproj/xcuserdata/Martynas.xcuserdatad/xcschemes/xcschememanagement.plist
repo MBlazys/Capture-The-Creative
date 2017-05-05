@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Reusable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,11 +72,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2504C1D6BCDDB3868A43357715D8A37D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
@@ -82,17 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>764D2762B32F5331CADC1249E4C337E2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9D371F084A872F519D76BDE920BD9FCE</key>
+		<key>533FD7CBA510D63471A143B770355A06</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9D781EB30AA915DF5F4DD7F2BB2A2CA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A04A60AD2E176A281617D0528BEA1F01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>CABDE09A0A46A716F734D0A266C7CEA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E396A93E4C79B22B7816E9F02F62ECED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC3C18C745570E7A282CDF36AEF64CF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

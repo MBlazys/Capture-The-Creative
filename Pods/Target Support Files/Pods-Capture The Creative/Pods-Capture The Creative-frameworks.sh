@@ -97,6 +97,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IGListKit/IGListKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Reusable/Reusable.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyCam/SwiftyCam.framework"
 fi
@@ -109,6 +110,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IGListKit/IGListKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Reusable/Reusable.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyCam/SwiftyCam.framework"
 fi
