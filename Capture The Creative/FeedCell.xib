@@ -12,20 +12,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FeedCell" preservesSuperviewLayoutMargins="YES" reuseIdentifier="FeedCell" id="8kJ-zR-d25" customClass="FeedCell" customModule="Capture_The_Creative" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="370" height="580"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="370" height="580"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sS4-ng-ayO">
-                        <rect key="frame" x="5" y="70" width="360" height="450"/>
+                        <rect key="frame" x="5" y="70" width="365" height="450"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="450" id="Bac-UT-6Qk"/>
                         </constraints>
                     </imageView>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQu-yP-Weh">
-                        <rect key="frame" x="10" y="525" width="350" height="50"/>
+                        <rect key="frame" x="10" y="525" width="355" height="50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="Yln-yJ-xIy"/>
@@ -39,9 +39,6 @@
                             <constraint firstAttribute="width" constant="50" id="5th-f7-Wlb"/>
                             <constraint firstAttribute="height" constant="50" id="6Ib-Rg-o8s"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZR-yW-wbx">
                         <rect key="frame" x="65" y="10" width="94" height="27.5"/>
@@ -72,7 +69,7 @@
                 <constraint firstAttribute="trailing" secondItem="sS4-ng-ayO" secondAttribute="trailing" constant="5" id="tgV-dF-Ymm"/>
                 <constraint firstItem="ipG-XB-c3W" firstAttribute="bottom" secondItem="f4Y-z6-P5q" secondAttribute="bottom" id="wIJ-su-LSb"/>
             </constraints>
-            <size key="customSize" width="409" height="440"/>
+            <size key="customSize" width="414" height="832"/>
             <connections>
                 <outlet property="descriptionLabel" destination="YQu-yP-Weh" id="N3O-7f-4f1"/>
                 <outlet property="postImage" destination="sS4-ng-ayO" id="IFg-Y3-mgD"/>
@@ -80,7 +77,7 @@
                 <outlet property="titleLabel" destination="ipG-XB-c3W" id="iSA-6k-qZG"/>
                 <outlet property="usernameLabel" destination="RZR-yW-wbx" id="6jd-gu-gZf"/>
             </connections>
-            <point key="canvasLocation" x="84" y="177.5"/>
+            <point key="canvasLocation" x="86.5" y="373"/>
         </collectionViewCell>
     </objects>
 </document>

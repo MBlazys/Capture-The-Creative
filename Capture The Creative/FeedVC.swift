@@ -108,7 +108,9 @@ class FeedVC: UIViewController {
                                     }
                                 }
                             }
-                        })
+                        }) { (error) in
+                            print(error.localizedDescription)
+                        }
                     }
                 }
             }
@@ -140,3 +142,4 @@ extension FeedVC: IGListAdapterDataSource {
     }
     
 }
+

@@ -128,43 +128,13 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
                                     
                                     return
                                 }
-                                
-                                
-                                
                             })
-                            
                         }
-                        
                     })
-                    
                 })
-                
             }
-            
         }
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     func loadUserInfo() {
         
@@ -186,9 +156,6 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
                 self.bioTextField.text = values?["bio"] as? String
                 
             })
-            
         }
-        
     }
-    
 }

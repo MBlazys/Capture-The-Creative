@@ -19,6 +19,8 @@ extension PostVC {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
+            self.facebookSwitch.setOn(false, animated: true)
+            
             return
         }
         
@@ -51,6 +53,8 @@ extension PostVC {
             let alert = UIAlertController(title: "Twitter Unavailable", message: "You haven't registered your Twitter account. Please go to Settings -> Twitter to create one.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
+            self.twitterSwitch.setOn(false, animated: true)
             
             return
         }

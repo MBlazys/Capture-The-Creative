@@ -61,8 +61,8 @@ extension PostVC {
                         let fullname = dictionary?["fullname"] as? String
                         let profileURL = dictionary?["photoURL"] as? String
                         
-                        let postInfo = Post(title: title, desc: desc, photoURL: url!.absoluteString, uid: userID, username: FIRAuth.auth()!.currentUser!.displayName!, likes: "0", postID: key, timestamp: NSNumber(value: Int(NSDate().timeIntervalSince1970)), fullname: fullname, profileURL: profileURL)
-                        
+                        let postInfo = Post(title: title, desc: desc, photoURL: url!.absoluteString, uid: userID, username: FIRAuth.auth()!.currentUser!.displayName!, likes: "0", postID: key, timestamp: NSNumber(value: Int(NSDate().timeIntervalSince1970)), fullname: fullname!, profileURL: profileURL!)
+    
                         databaseRef.child("posts").child(userID).child(key).updateChildValues(postInfo.getPostDictionary(), withCompletionBlock: { (err, databaseRef) in
                             
                             if err != nil {
@@ -72,7 +72,25 @@ extension PostVC {
                                 
                             }
                         })
+                        
+                        guard let lat = self.latitude else {return}
+                        guard let long = self.longitude else {return}
+                        
+                        let coordinates = ["latidute": lat,
+                                           "longitude": long]
+                        databaseRef.child("posts").child(userID).child(key).updateChildValues(coordinates, withCompletionBlock: { (err, databaseRef) in
+                            
+                            if err != nil {
+                                let alert = UIAlertController(title: "Error", message: (err?.localizedDescription)! as String, preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
+                                
+                            }
+                        })
+                        
                     })
+                    
+                    
                 })
                 
             })

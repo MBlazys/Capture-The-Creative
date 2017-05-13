@@ -25,6 +25,9 @@
 		CA68845A1EBC948600BCB837 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6884591EBC948600BCB837 /* MapKit.framework */; };
 		CA7AEF291E7B2BC7007618A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7AEF281E7B2BC7007618A4 /* Post.swift */; };
 		CA7AEF2B1E7BFF77007618A4 /* uploadPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7AEF2A1E7BFF77007618A4 /* uploadPost.swift */; };
+		CAB772461EBE968500DCF9A0 /* handleFBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB772451EBE968500DCF9A0 /* handleFBButton.swift */; };
+		CAB772481EBF2CB200DCF9A0 /* handleFBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB772471EBF2CB200DCF9A0 /* handleFBAuth.swift */; };
+		CAB7724A1EBF9C5B00DCF9A0 /* FBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB772491EBF9C5B00DCF9A0 /* FBUser.swift */; };
 		CAC475551E7AA04A00AD06D3 /* cameraHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475541E7AA04A00AD06D3 /* cameraHandlers.swift */; };
 		CAC475571E7AA16100AD06D3 /* photoLibraryImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */; };
 		CAC475591E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */; };
@@ -70,6 +73,9 @@
 		CA6884591EBC948600BCB837 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CA7AEF281E7B2BC7007618A4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CA7AEF2A1E7BFF77007618A4 /* uploadPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uploadPost.swift; sourceTree = "<group>"; };
+		CAB772451EBE968500DCF9A0 /* handleFBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handleFBButton.swift; sourceTree = "<group>"; };
+		CAB772471EBF2CB200DCF9A0 /* handleFBAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handleFBAuth.swift; sourceTree = "<group>"; };
+		CAB772491EBF9C5B00DCF9A0 /* FBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBUser.swift; sourceTree = "<group>"; };
 		CAC475541E7AA04A00AD06D3 /* cameraHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraHandlers.swift; sourceTree = "<group>"; };
 		CAC475561E7AA16100AD06D3 /* photoLibraryImageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoLibraryImageHandler.swift; sourceTree = "<group>"; };
 		CAC475581E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handlePickImageFromLibrary.swift; sourceTree = "<group>"; };
@@ -253,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				CAE1336B1E73FCC00042B4B7 /* User.swift */,
+				CAB772491EBF9C5B00DCF9A0 /* FBUser.swift */,
 				CA7AEF281E7B2BC7007618A4 /* Post.swift */,
 				CA24501A1EB62AF0001DABB2 /* Follower.swift */,
 			);
@@ -273,6 +280,7 @@
 			children = (
 				CAE133641E73FC600042B4B7 /* handleSelectUserProfileImage.swift */,
 				CAE133661E73FC7C0042B4B7 /* handleEmailAuth.swift */,
+				CAB772471EBF2CB200DCF9A0 /* handleFBAuth.swift */,
 			);
 			name = registerHandlers;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				CAE1335C1E73FBA50042B4B7 /* handleEmailLogin.swift */,
+				CAB772451EBE968500DCF9A0 /* handleFBButton.swift */,
 			);
 			name = loginHandlers;
 			sourceTree = "<group>";
@@ -442,6 +451,7 @@
 				CA6884581EBC8FF500BCB837 /* handleSocialSharing.swift in Sources */,
 				CAE133591E73FB6B0042B4B7 /* LoginVCKeyboard.swift in Sources */,
 				CA65226B1E780AA5009C0D55 /* CameraVC.swift in Sources */,
+				CAB7724A1EBF9C5B00DCF9A0 /* FBUser.swift in Sources */,
 				CAE1335D1E73FBA50042B4B7 /* handleEmailLogin.swift in Sources */,
 				CA2450161EB62547001DABB2 /* UserCell.swift in Sources */,
 				CA24501B1EB62AF0001DABB2 /* Follower.swift in Sources */,
@@ -449,12 +459,14 @@
 				CA65226F1E796D9A009C0D55 /* PhotoVC.swift in Sources */,
 				CAE133711E73FD4A0042B4B7 /* handleUpdateUserProfilePhoto.swift in Sources */,
 				CAC475591E7AAF9400AD06D3 /* handlePickImageFromLibrary.swift in Sources */,
+				CAB772481EBF2CB200DCF9A0 /* handleFBAuth.swift in Sources */,
 				CAC475571E7AA16100AD06D3 /* photoLibraryImageHandler.swift in Sources */,
 				CAC4755B1E7AC2AA00AD06D3 /* PostVC.swift in Sources */,
 				CA7AEF2B1E7BFF77007618A4 /* uploadPost.swift in Sources */,
 				CAE133651E73FC600042B4B7 /* handleSelectUserProfileImage.swift in Sources */,
 				CAC475551E7AA04A00AD06D3 /* cameraHandlers.swift in Sources */,
 				CA2450191EB6263F001DABB2 /* UsersVC.swift in Sources */,
+				CAB772461EBE968500DCF9A0 /* handleFBButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

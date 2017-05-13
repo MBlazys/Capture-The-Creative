@@ -8,8 +8,10 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class RegisterVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class RegisterVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, FBSDKLoginButtonDelegate {
     
     @IBOutlet var backgroundImage: UIImageView!
     @IBOutlet var profileImage: UIImageView!
@@ -19,9 +21,14 @@ class RegisterVC: UIViewController, UITextFieldDelegate, UIImagePickerController
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var repeatPasswordTextField: UITextField!
     @IBOutlet var registerButton: UIButton!
+    @IBOutlet var fbButton: FBSDKLoginButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fbButton.delegate = self
+        
+        self.fbButton.readPermissions = ["public_profile", "email"]
         
         // Delegates
         usernameTextField.delegate = self

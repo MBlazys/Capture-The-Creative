@@ -29,5 +29,4 @@ class FeedCell: UICollectionViewCell, NibReusable {
         self.postImage.layer.cornerRadius = 5
         
     }
-
 }

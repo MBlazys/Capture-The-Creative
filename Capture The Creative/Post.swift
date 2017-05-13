@@ -23,7 +23,7 @@ class Post {
     var fullname: String!
     var profileURL: String!
     
-    init(title: String, desc: String, photoURL: String, uid: String, username: String, likes: String!, postID: String, timestamp: NSNumber, fullname: String!, profileURL: String!) {
+    init(title: String, desc: String, photoURL: String, uid: String, username: String, likes: String, postID: String, timestamp: NSNumber, fullname: String, profileURL: String) {
         
         self.title = title
         self.desc = desc
@@ -48,7 +48,7 @@ class Post {
                               "postID": self.postID,
                               "timestamp": self.timestamp,
                               "fullname": self.fullname,
-                              "profileURL": self.profileURL] as [String : Any]
+                              "profileURL": self.profileURL,] as [String : Any]
         
         return postDictionary as Dictionary<String, AnyObject>
     }

@@ -8,17 +8,24 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class LoginVC: UIViewController, UITextFieldDelegate {
+class LoginVC: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate {
     
     @IBOutlet var backgroundImage: UIImageView!
     @IBOutlet var logo: UIImageView!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
+    @IBOutlet var fbButton: FBSDKLoginButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fbButton.delegate = self
+        
+        self.fbButton.readPermissions = ["public_profile", "email"]
         
         // Delegates
         emailTextField.delegate = self
@@ -29,7 +36,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         // Apply Keyboard settings from LoginVCKeyboard.swift file
         hideKeyboardOnTap() // hides keyboard when tapped anywhere on a screen
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,5 +66,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         emailLogin()
         
     }
+    
+    
+    
+    
     
 }

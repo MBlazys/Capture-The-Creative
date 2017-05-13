@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FBSDKLoginKit
 
 class ProfileVC: UIViewController {
     
@@ -26,8 +27,12 @@ class ProfileVC: UIViewController {
         self.profileImage.layer.borderColor = UIColor.black.cgColor
         self.profileImage.clipsToBounds = true
         
-        retrieveUserInfo()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
+        retrieveUserInfo()
     }
     
     func retrieveUserInfo() {
@@ -35,7 +40,6 @@ class ProfileVC: UIViewController {
         databaseRef = FIRDatabase.database().reference()
         
         if let userID = FIRAuth.auth()?.currentUser?.uid {
-            
             databaseRef.child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                 
                 let dictionary = snapshot.value as? NSDictionary
@@ -63,14 +67,6 @@ class ProfileVC: UIViewController {
         }
     }
     
-    @IBAction func handleOpenCameraVC(_ sender: Any) {
-        
-        let viewConrolller = self.storyboard?.instantiateViewController(withIdentifier: "Camera") as! CameraVC
-        self.present(viewConrolller, animated: true, completion: nil)
-
-        
-    }
-    
     @IBAction func handleLogoutButton(_ sender: Any) {
         
         do {
@@ -84,6 +80,10 @@ class ProfileVC: UIViewController {
             
             return
         }
+        
+        FBSDKAccessToken.current()
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
         
         // Present the login screen
         if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Login") {
